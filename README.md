@@ -1,6 +1,6 @@
 # Semi-supervised Time Series Classification by Temporal Relation Prediction
 
-#Code and data will be released before 10.31.2020 ....
+# Code and data will be released before 10.31.2020 ....
 
 
 ![motivation](img/motivation.jpg)
