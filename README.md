@@ -1,6 +1,6 @@
-# Semi-supervised Time Series Classification by Temporal Relation Prediction
+# Semi-supervised Time Series Classification by Temporal Relation Prediction (Submitted to IEEE ICASSP 2021)
 
-# Code and data will be released before 10.31.2020 ....
+# Code and data will be released upon acceptance...
 
 
 ![motivation](img/motivation.jpg)
@@ -12,7 +12,7 @@
 
 ## Requirements
 
-* Python 3.6 or 3.7
+* Python 3.6
 * PyTorch version 1.4
 
 
@@ -24,9 +24,9 @@
 python train_ssl.py --dataset_name CricketX --model_name SuperCE
 ```
 
-**SelfTime**:
+**SemiTime**:
 ```bash
-python train_ssl.py --dataset_name CricketX --model_name SelfTime
+python train_ssl.py --dataset_name CricketX --model_name SemiTime
 ```
 
 
