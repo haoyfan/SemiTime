@@ -7,14 +7,6 @@ import torch
 from optim.train import supervised_train
 
 
-'''
-'MiddlePhalanxOutlineAgeGroup', 
-'ProximalPhalanxOutlineAgeGroup', 
-'SwedishLeaf', 
-'MixedShapesRegularTrain', 
-'Crop'
-'''
-
 def parse_option():
     parser = argparse.ArgumentParser('argument for training')
     parser.add_argument('--save_freq', type=int, default=200,
@@ -22,7 +14,7 @@ def parse_option():
     parser.add_argument('--batch_size', type=int, default=128,
                         help='batch_size')
     parser.add_argument('--K', type=int, default=4, help='Number of augmentation for each sample') # Bigger is better.
-    parser.add_argument('--alpha', type=float, default=0.4, help='Past-future split point')
+    parser.add_argument('--alpha', type=float, default=0.5, help='Past-future split point')
 
     parser.add_argument('--feature_size', type=int, default=64,
                         help='feature_size')
