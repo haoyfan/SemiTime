@@ -1,6 +1,4 @@
-# Semi-supervised Time Series Classification by Temporal Relation Prediction (Submitted to IEEE ICASSP 2021)
-
-# Code and data will be released upon acceptance...
+# Semi-supervised Time Series Classification by Temporal Relation Prediction (ICASSP 2021)
 
 
 ![motivation](img/motivation.jpg)
@@ -21,21 +19,27 @@
 
 **Supervised**:
 ```bash
-python train_ssl.py --dataset_name CricketX --model_name SuperCE
+python main.py --dataset_name CricketX --model_name SuperCE
 ```
 
 **SemiTime**:
 ```bash
-python train_ssl.py --dataset_name CricketX --model_name SemiTime
+python main.py --dataset_name CricketX --model_name SemiTime
 ```
 
 
 ## Check Results
-After runing model training and evaluation, the checkpoints of the trained model are saved in the local [ckpt] directory, the training logs are saved in the local [log] directory, and all experimental results are saved in the local [results] directory.
+After runing model training and evaluation, the checkpoints of the trained model are saved in the local [ckpt] directory, and all experimental results are saved in the local [results] directory.
 
 
 ### Cite
 If you make use of this code in your own work, please cite our paper.
-```bash
-
+```
+@inproceedings{fan2021semitime,
+  title        = {Semi-supervised Time Series Classification by Temporal Relation Prediction},
+  author       = {Haoyi Fan, Fengbin Zhang, Ruidong Wang, Xunhua Huang, and Zuoyong Li},
+  booktitle    = {46th International Conference on Acoustics, Speech, and Signal Processing},
+  year         = {2021},
+  organization={IEEE}
+}
 ```
